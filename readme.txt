@@ -11,3 +11,13 @@ version: '3.8'
 - docker compose up --build
 - docker compose down
 
+https://www.builder.io/blog/debug-nodejs
+- node server.js --inspect-brk
+- If the Node.js icon isn’t there in DevTools:
+
+Go to the chrome://inspect url.
+Click Open dedicated DevTools for Node.
+Go to Connection tab
+Click Add Connection.
+Add a connection to match the port that node is listening on; for example, localhost:9229.
+
